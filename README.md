@@ -1,6 +1,8 @@
-# Groupie Tracker
+# Concert Atlas: Artist & Concert Explorer
 
 A Go web application for exploring artists, bands, and concert histories. Built around the [Groupie Trackers API](https://groupietrackers.herokuapp.com/api), it combines artist profiles, categorized search, advanced filters, and concert maps in a responsive interface.
+
+![Concert Atlas homepage in dark mode showing the artist collection and search controls](docs/screenshots/concert-atlas-dark.png)
 
 ## Features
 
@@ -12,9 +14,9 @@ A Go web application for exploring artists, bands, and concert histories. Built 
 
 ## Stack
 
-**Go 1.23+**, HTML, CSS, and SVG. The backend uses Go's standard library, including `net/http`, `encoding/json`, `html/template`, and `embed`. Geocoding uses Photon with OpenStreetMap data; the basemap uses Natural Earth land outlines.
+**Go 1.23+**, HTML, CSS, SVG, and a small JavaScript theme toggle. The backend uses Go's standard library, including `net/http`, `encoding/json`, `html/template`, and `embed`. Geocoding uses Photon with OpenStreetMap data; the basemap uses Natural Earth land outlines.
 
-Search, filtering, and rendering run on the server. The interface uses native HTML forms and suggestions, with no application JavaScript or third-party Go dependencies.
+Search, filtering, and rendering run on the server. The interface uses native HTML forms and suggestions; JavaScript handles the light/dark theme toggle. Search, filters, and maps work without JavaScript. There are no third-party Go dependencies.
 
 ## Run locally
 
